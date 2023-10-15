@@ -1,0 +1,183 @@
+.container, .row, header, main, footer, body{
+    display: flex;    
+}
+.container{
+    padding: 20px 0;
+    justify-content: center;
+}
+
+body{
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, rgb(30, 30, 30), rgb(150, 150,150));
+    color: whitesmoke;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-family: 'Young+Serif', serif;
+    height: auto;
+}
+
+header ,footer{
+    background-color:darkgray;
+    width:100%;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+}
+
+
+.headings, .keycolor{
+    color: lightgoldenrodyellow;
+}
+
+.headings{
+    font-weight: bolder;
+}
+.avatar{
+    align-items: center;
+}
+
+h1{
+    margin-top: 0;
+}
+
+h2{
+    margin-top:80px;
+    background-color: rgba(169, 169, 169, 0.603) ;
+}
+
+section > .headings{
+    position: sticky;
+    top:60px;
+}
+
+header>img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+main{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section{
+   max-width: 1800px;
+}
+
+section:nth-child(2n) > .headings{
+    text-align: left;
+}
+section:nth-child(2n+3) > .headings{
+    text-align: right;
+}
+
+.main-title{
+    flex-direction:column;
+
+}
+
+#profile-pic{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.link-text{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    color:rgb(30, 30, 30);
+    background-color: lightgoldenrodyellow;
+    font-size: 40px;
+    font-weight: bolder;
+    border-radius: 5%;
+}
+
+ .home-link > a > img{
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
+    border-color: lightgoldenrodyellow;
+    border-radius: 5%;
+}
+a:hover > img, a:hover ~ .link-text{
+    filter: none;
+    text-decoration: underline;
+}
+
+.pages > .row{
+    justify-content:space-evenly;
+    flex-wrap: wrap; 
+}
+
+.pages .column{
+    width: 33%;
+    min-width: 200px;
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.common-boards  .row:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.common-boards > .row{
+    justify-content:space-between;
+    flex-wrap: wrap; 
+    align-items: center;
+    text-align: center;
+}
+
+.common-boards .column{
+    width:50%;
+    min-width: 200px;
+}
+
+.common-boards img{
+    width:100%;
+    max-width: 350px; 
+}
+
+.mechs img{
+    max-width: 50%;
+
+}
+
+.mechs{
+    align-items: center;
+}
+
+.mechswitch{
+    text-align: left;
+}
+
+.mechtypes{
+    text-align: center;
+}
+
+.mechtypes .column{
+    width:33%;
+    padding-left:10px;
+}
+
+.vid div{
+    width:33%;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+
