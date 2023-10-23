@@ -7,34 +7,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Young+Serif">
     <title>MechKeys</title>
     <link rel="icon" href="favicon.ico" />
+    <!-- <link rel="stylesheet" href="/Normalize.css"> -->
     <link rel="stylesheet" href="/style.css">
   </head>
 
   <body>
     <header>
-        <div class="banner title">
-          <b>Mechanical Keyboards</b>
-        </div>
+      <div class="cont banner">
         <img src="/favicon.ico" alt="icon">
-        <div class="banner links">
-          <nav class="nav">
-              <a href="#home">Home</a>
-              <a href="#intro">Intro</a>
-              <a href="#layouts">Layouts</a>
-              <a href="#keycaps">Keycaps</a>
-              <a href="#switches">Switches</a>
-              <a href="#mods">Modding</a>
-              <a href="#lubing">Lubing</a>
-            </nav>
+        <div class="banner-title">
+          <P>Mechanical Keyboards</P>
         </div>
+        <!-- <div class="banner-links">
+          <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#intro">Intro</a>
+            <a href="#layouts">Layouts</a>
+            <a href="#keycaps">Keycaps</a>
+            <a href="#switches">Switches</a>
+            <a href="#mods">Modding</a>
+            <a href="#lubing">Lubing</a>
+          </nav>
+        </div> -->
+      </div>    
     </header>
 
+    <div class="cont main-side">
     <main>
-      <section class="conainer" id="home">
-        <div class ="container main-title">
-          
-            <div class="container avatar">
-              <img id="profile-pic" src="/img/avatar.jpg" alt="avatar">
+      <section id="home">
+            <div class="cont avatar">
+              <img src="/img/avatar.jpg" alt="avatar">
               <div>
                 Lewis Bavin
                 <sub><small><time datetime="2023-09-25 14:54:39.929">
@@ -42,71 +44,89 @@
                 </time></small></sub>
               </div>
             </div>
-            <h1 class="headings">A Brief Introduction to Mechanical Keyboards</h1>
-            <div class="opening">
+            <h1 class="heading keycolor">A Brief Introduction to Mechanical Keyboards</h1>
+            <p class="content">
               Chances are you have used a keyboard once in your life, or at least seen one (I have anyway). They are everywhere - at your work, on your laptop/connected to your home computer, or even appearing virtually on your smartphone.
               But exactly what is a <b class="keycolor">Mechanical</b> Keyboard?
-            </div>
-        </div>
+            </p>
 
-        <div class="pages">
-          <div class = "row">
-            <div class="column">
-              <div class = "home-link">
-                <a href="#intro"><img src="/img/intro.jpg" alt="intro"></a>
-                <div class="link-text">Intro</div>
-              </div>  
-            </div>
-            <div class="column">
-              <div class = "home-link">
-                <a href="#switches"><img src="/img/switches.jpg" alt="switches"></a>
-                <div class="link-text">Switches</div>
-              </div>   
-            </div>
-            <div class="column">
-              <div class = "home-link">
-                <a href="#keycaps"><img src="/img/keycaps.jpg" alt="keycaps"></a>
-                <div class="link-text">Keycaps</div>
-              </div> 
-            </div>
-          </div>
-
-          <div class = "row">
-            <div class="column">
-              <div class = "home-link">
-                <a href="#layouts"><img src="/img/layouts.jpg" alt="layouts"></a>
-                <div class="link-text">Layouts</div>
-              </div> 
+        <div class="cont pages">
+          <div class="card">
+            <div class = "card-img">
+              <a tabindex="1" href="#intro">
+                <img  src="/img/intro.jpg" alt="intro">
               
-            </div>
-            <div class="column">
-              <div class = "home-link">
-                <a href="#mods"><img src="/img/mods.jpg" alt="mods"></a>
-                <div class="link-text">Mods</div>
-              </div>  
-            </div>
-            <div class="column">
-              <div class = "home-link">
-                <a href="#lubing"><img src="/img/lubing.jpg" alt="lubing"></a>
-                <div class="link-text">Lubing</div>
-              </div>  
+              <div class="cont card-slide">
+                <div class="slide-txt">Intro</div>
+                <div class="slide-txt hidden">Get to know non-mechanical Keebs!</div>
+              </div>
+              </a>
             </div>
           </div>
+          <div class="card">
+            <div class = "card-img">
+              <a href="#switches"><img  src="/img/switches.jpg" alt="switches">
+              <div class="cont cont card-slide">
+                <div class="slide-txt">Switches</div>
+                <div class="slide-txt hidden">Clickety-Click-Clack-Clack!</div>
+              </div>
+            </a>
+            </div> 
+          </div>
+          <div class="card">
+            <div class = "card-img">
+              <a href="#keycaps"><img tabindex="3" src="/img/keycaps.jpg" alt="keycaps">
+              <div class="cont card-slide">
+                <div class="slide-txt">Keycaps</div>
+                <div class="slide-txt hidden">A cornucopia of colours and themes!</div>
+              </div>
+            </a>
+            </div> 
+          </div>
+          <div class="card">
+            <div class = "card-img">
+              <a href="#layouts"><img tabindex="4" src="/img/layouts.jpg" alt="layouts">
+              <div class="cont card-slide">
+                <div class="slide-txt">Layouts</div>
+                <div class="slide-txt hidden">Ergonomics and effeciency!</div>
+              </div>
+            </a>
+            </div> 
+          </div>
+          <div class="card">
+            <div class = "card-img">
+              <a href="#mods"><img tabindex="5" src="/img/mods.jpg" alt="mods">
+              <div class="cont card-slide">
+                <div class="slide-txt">Mods</div>
+                <div class="slide-txt hidden">Fine-tune your precious keeb!</div>
+              </div>
+            </a>
+            </div> 
+          </div>
+          <div class="card">
+            <div class = "card-img">
+              <a href="#lubing"><img tabindex="6" src="/img/lubing.jpg" alt="lubing">
+              <div class="cont card-slide">
+                <div class="slide-txt">Lubing</div>
+                <div class="slide-txt hidden">Greece those wheels baby!</div>
+              </div>
+            </a>
+            </div>
+          </div>  
         </div>
       </section>
 
       <section id="intro">
-        <div class="headings">
+        <div class="heading keycolor">
           <h2>Introduction to Non-Mechanical Keyboards</h2>
         </div>
 
-        <div>All physical keyboards share a common design functionality - the user presses a button down which interacts with the underlying curcuitboard which sends instructions to the connected device to ouput an intended fucntion specific to that button or 'key' (usually to input a character)</div>
-        <div>Common keyboards usually come under three different categories:</div>
+        <p class="content">All physical keyboards share a common design functionality - the user presses a button down which interacts with the underlying curcuitboard which sends instructions to the connected device to ouput an intended fucntion specific to that button or 'key' (usually to input a character). Common keyboards usually come under three different categories:</p>
         <div class="common-boards">
           <div class="row">
             <div class="column">
-              <div class="headings">Membrane</div>
-              <div>A membrane keyboard is a computer keyboard whose "keys" are not separate, moving parts, as with the majority of other keyboards, but rather are pressure pads that have only outlines and symbols printed on a flat, flexible surface. Very little, if any, tactile feedback is felt when using such a keyboard. The lack of feedback is usually subsidised with an audial or visual cue. Usually found on things like micro-waves and simple touchpads</div>
+              <div class="heading keycolor2">Membrane</div>
+              <p>A membrane keyboard is a computer keyboard whose "keys" are not separate, moving parts, as with the majority of other keyboards, but rather are pressure pads that have only outlines and symbols printed on a flat, flexible surface. Very little, if any, tactile feedback is felt when using such a keyboard. The lack of feedback is usually subsidised with an audial or visual cue. Usually found on things like micro-waves and simple touchpads</p>
             </div>  
             <div class="column">
               <img src="/img/membrane.png" alt="membrane">
@@ -115,8 +135,8 @@
 
           <div class="row">
             <div class="column">
-              <div class="headings">Dome-Switch</div>
-              <div>Dome-switch keyboards are a hybrid of flat-panel membrane and switch keyboards. They bring two circuit board traces together under a rubber or silicone keypad using either metal "dome" switches or polyurethane formed domes. The metal dome switches are formed pieces of stainless steel that, when compressed, give the user crisp, positive tactile feedback. These metal types of dome switches are very common, and are used in the large majority of offices world-wide</div>
+              <div class="heading keycolor2">Dome-Switch</div>
+              <p>Dome-switch keyboards are a hybrid of flat-panel membrane and switch keyboards. They bring two circuit board traces together under a rubber or silicone keypad using either metal "dome" switches or polyurethane formed domes. The metal dome switches are formed pieces of stainless steel that, when compressed, give the user crisp, positive tactile feedback. These metal types of dome switches are very common, and are used in the large majority of offices world-wide</p>
             </div>  
             <div class="column">
               <img src="/img/Dome.svg" alt="dome">
@@ -125,8 +145,8 @@
 
           <div class="row">
             <div class="column">
-              <div class="headings">Scissor-Switch</div>
-              <div>The keys are attached to the keyboard via two plastic pieces that interlock in a "scissor"-like fashion and snap to the keyboard and the key. It still uses rubber domes, but a special plastic 'scissors' mechanism links the keycap to a plunger that depresses the rubber dome with a much shorter travel than the typical rubber dome keyboard. Usually present on most laptops.</div>
+              <div class="heading keycolor2">Scissor-Switch</div>
+              <p>The keys are attached to the keyboard via two plastic pieces that interlock in a "scissor"-like fashion and snap to the keyboard and the key. It still uses rubber domes, but a special plastic 'scissors' mechanism links the keycap to a plunger that depresses the rubber dome with a much shorter travel than the typical rubber dome keyboard. Usually present on most laptops.</p>
             </div>  
             <div class="column">
               <img src="/img/scissor.png" alt="scissor">
@@ -136,66 +156,74 @@
       </section>
 
       <section id="switches">
-        <div class="headings">
-          <h2>Mechanical Keyboards - The Mechanical Switch</h2>
+        <div class="heading keycolor">
+          <h2>The Mechanical Switch</h2>
         </div>
 
-        <div class="container mechs">
-          <img src="/img/mechswitch.png" alt="mechanical switch2">
-
+        <div class="cont initial-mech">
+          <p class="content">
+            So what makes a mechanical keyboard... well, <i class="keycolor">mechanical</i>? Its the specifically mechanical design and functinallty of the underlying switches beneath each key. The switches are engineered to provide the user with fluid and responsive tactility along with consistent audio cues allowing for a more effecient typing experience.
+          </p> 
           <div>
-            <div>So what makes a mechanical keyboard... well, <i class="keycolor">mechanical</i>? Its the specifically mechanical design and functinallty of the underlying switches beneath each key. The switches are engineered to provide the user with fluid and responsive tactility along with consistent audio cues allowing for a more effecient typing experience.</div>
-              <ul class = "mechswitch">
-                <li><b class ="keycolor">Bottom/Top Housing - </b>Plastic containers used to house the switch components and <b><i>secure the switch</i></b> in place</li>
-                <li><b class="keycolor">Metal Leaf - </b>The base prongs extrude from the bottom housing and <b><i>connect the switch</i></b> to the electrical circuitry. Slots into the stem to provide it stabibilty</li>
-                <li><b class="keycolor">Spring - </b>The top housing, once secured into the bottom housing, compresses the spring which in turn <b><i>provide actuation force</i></b> to the switch components</li>
-                <li><b class="keycolor">Stem - </b>At rest, the spring forces the stem to the top of the switch housing and leaving the underlying circuit open, when pushed down it forces the metal leaf down which <b><i>closes the circuit</i></b> 'activiating' the key</li>
+            <img src="/img/mechswitch.png" alt="mechanical switch2">
+          </div>
+           
+         
+          <div class="cont mechlist">
+            
+              <p><ul class = "mechswitch">
+                <li><b class ="keycolor2">Bottom/Top Housing - </b>Plastic conts used to house the switch components and <b><i>secure the switch</i></b> in place</li>
+                <li><b class="keycolor2">Metal Leaf - </b>The base prongs extrude from the bottom housing and <b><i>connect the switch</i></b> to the electrical circuitry. Slots into the stem to provide it stabibilty</li>
               </ul>
+
+              <ul class = "mechswitch">
+                <li><b class="keycolor2">Spring - </b>The top housing, once secured into the bottom housing, compresses the spring which in turn <b><i>provide actuation force</i></b> to the switch components</li>
+                <li><b class="keycolor2">Stem - </b>At rest, the spring forces the stem to the top of the switch housing and leaving the underlying circuit open, when pushed down it forces the metal leaf down which <b><i>closes the circuit</i></b> 'activiating' the key</li>
+              </ul></p>
+          </div>
         </div>
-        
-      </div>
-      <div>There are a multitude of different types with various features but they essnetially boil down to 3 categories (or a hybrid of the three):</div>
-      <div class="container mechtypes">
+
+      <p class="content">There are a multitude of different types with various features but they essnetially boil down to 3 categories (or a hybrid of the three):</p>
+      <div class="cont mechtypes">
 
         <div class="column">
-          <div class="headings">Linear</div>
+          <div class="heading keycolor2">Linear</div>
           <img src="/img/gif_linear.webp" alt="linear">
-          <div class="descr">Linear switches are a type of switch that focus on producing a smooth, consistent actuation without any tactile feedback.
+          <p class="descr">Linear switches are a type of switch that focus on producing a smooth, consistent actuation without any tactile feedback.
             Great for people who don’t like the small bump experienced from tactile switches or the loud noises from clicky switches.
             Usually quiet, smooth, and consistent throughout the entire movement.
             Especially used by gamers as the consistent keystrokes allow for more precision in highly competitive games.
-            Also enjoyed by people who prefer smooth movements while typing.</div> 
+            Also enjoyed by people who prefer smooth movements while typing.</p> 
         </div>
 
         <div class="column">
-          <div class="headings">Tactile</div>
+          <div class="heading keycolor2">Tactile</div>
           <img src="/img/gif_tactile.webp" alt="tactile">
-          <div class="descr">Tactile switches are a type of switch that focus on producing a tactile bump and a relatively quiet audible click with each keystroke.
-            Tactile switches offer great feedback when typing, so you know by the sound and feel everything is working properly and all of your keystrokes are getting logged. Not to mention they are satisfying and fun to use.</div>
+          <p class="descr">Tactile switches are a type of switch that focus on producing a tactile bump and a relatively quiet audible click with each keystroke.
+            Tactile switches offer great feedback when typing, so you know by the sound and feel everything is working properly and all of your keystrokes are getting logged. Not to mention they are satisfying and fun to use.</p>
         </div>
 
         <div class="column">
-          <div class="headings">Clicky</div>
+          <div class="heading keycolor2">Clicky</div>
           <img src="/img/gif_clicky.webp" alt="clicky">
-          <div class="descr">Clicky switches are a type of switch that focus on producing a tactile bump and loud audible click with each keystroke.
-            Loud and clicky switches offer great feedback when typing, so you know by the sound everything is working properly. Not to mention the sound is awesome.</div> 
+          <p class="descr">Clicky switches are a type of switch that focus on producing a tactile bump and loud audible click with each keystroke.
+            Loud and clicky switches offer great feedback when typing, so you know by the sound everything is working properly. Not to mention the sound is awesome.</p> 
         </div>
       </div>
       
-      <div class="container vid">
+      <p class="content">Which of the three is 'best' is debateable and mainly comes down to user preference. The great thing about mechanical keybaords is that theese days most boards allow their switches to be interchangeable rather than hard-soldered onto the motherboard like the large majority of other keyboards. This interchangeability is known as <b class="keycolor">'Hot-Swappable'</b> and is a very desireable trait. Watch this short video demonstrating the differnece between various types of switches.</p>  
       <iframe  src="https://www.youtube.com/embed/rm-WuK_9OBM?si=G4xsWj4sCPXDiyaW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <div>Which of the three is 'best' is debateable and mainly comes down to user preference. The great thing about mechanical keybaords is that theese days most boards allow their switches to be interchangeable rather than hard-soldered onto the motherboard like the large majority of other keyboards. This interchangeability is known as <b class="keycolor">'Hot-Swappable'</b> and is a very desireable trait. Watch this short video demonstrating the differnece between various types of switches.</div>  
-    </div>
+        
     </section>
 
     <section id="lubing">
-      <div class="headings"><h2>Lubricating Your Switches - Worth The Hassle?</h2></div>
+      <div class="heading keycolor"><h2>Lubeing Your Switches - Worth The Hassle?</h2></div>
       
       <div>
         <p>None-lubed Switches</p>
         <audio controls>
-          <source src="/Clack.ogg" type="audio/ogg">
-          <source src="/Clack.mp3" type="audio/mpeg">
+          <source src="/notClack.ogg" type="audio/ogg">
+          <source src="/notClack.mp3" type="audio/mpeg">
           Your browser does not support the <code>audio</code> element.
         </audio>
 
@@ -210,125 +238,43 @@
 
       
       <section id="layouts">
-        <div class="headings"><h2>Layouts & Forms - more than you might think!</h2></div>
+        <div class="heading keycolor"><h2>Layouts & Forms</h2></div>
 
-        <div>All physical keyboards share a common design functionality - the user presses a button down which interacts with the underlying curcuitboard which sends instructions to the connected device to ouput an intended fucntion specific to that button or 'key' (usually to input a character)</div>
-        <div>Common keyboards usually come under two different categories</div>
+        <p class="content">All physical keyboards share a common design functionality - the user presses a button down which interacts with the underlying curcuitboard which sends instructions to the connected device to ouput an intended fucntion specific to that button or 'key' (usually to input a character). Common keyboards usually come under two different categories</p>
       </section>
 
       <section id="keycaps">
-        <div class="headings"><h2>Keyaps - For That Visual Flare</h2></div>
+        <div class="heading keycolor"><h2>Keyaps - For That Visual Flare</h2></div>
 
-        <div>All physical keyboards share a common design functionality - the user presses a button down which interacts with the underlying curcuitboard which sends instructions to the connected device to ouput an intended fucntion specific to that button or 'key' (usually to input a character)</div>
-        <div>Common keyboards usually come under two different categories</div>
+        <p class="content">All physical keyboards share a common design functionality - the user presses a button down which interacts with the underlying curcuitboard which sends instructions to the connected device to ouput an intended fucntion specific to that button or 'key' (usually to input a character). Common keyboards usually come under two different categories</p>
       </section>
 
       <section id="mods">
-        <div class="headings"><h2>Modifications - Make it your own</h2></div>
+        <div class="heading keycolor"><h2>Modifications - Make it your own</h2></div>
 
-        <div>All physical keyboards share a common design functionality - the user presses a button down which interacts with the underlying curcuitboard which sends instructions to the connected device to ouput an intended fucntion specific to that button or 'key' (usually to input a character)</div>
-        <div>Common keyboards usually come under two different categories</div>
+        <p class="content">All physical keyboards share a common design functionality - the user presses a button down which interacts with the underlying curcuitboard which sends instructions to the connected device to ouput an intended fucntion specific to that button or 'key' (usually to input a character). Common keyboards usually come under two different categories</p>
+        
       </section>
-
-      
-
-<!-- <section id="intro">
-      
-      <div>
-        The virus attacks the areas of the brain responsible for hand-eye
-        coordination, rendering the patient <b>unable to learn</b> how to touch
-        type effectively.
-      </div>
-      <div>
-        Advanced cases of Typeitus can lead to
-        <strong
-          ><dfn id="CBT"
-            ><abbr title="Cronically Bad Tyepitus">CBT</abbr></dfn
-          ></strong
-        >, a stage of the disease which forces sufferers to scream 'Why can't I
-        , <span style="color: red"><s>fucking </s></span>
-        <span style="color: rgb(60, 255, 0)">fudging</span><sup><a href="#Disclaimers">[1]</a></sup> type???!!!' at their
-        keyboard in distress during touch typing practice.
-      </div>
-      <p>
-        <em>There is no known cure...</em
-        >
-      </p>
-
-      <div class="headings"><h2>Further Info</h2></div>
-      <blockquote cite="https://www.keybr.com">
-        <p>"Typeitus sufferers will never be able to break 40 wpm, its pretty pathetic lol"</p>
-        <footer>—Harry Fimblewinter, <cite>UK Typing Epidemic</cite></footer>
-      </blockquote>
-
-      <p>External factors that exhaserbate CBT inlude;</p>
-        <ul>
-          <li>Buying custom mechanical keyboards from the internet with a non UK layout</li>
-          <li>Trying to practice after a 12 hour night shift</li>
-          <li>Having no patience and expecting to be good at something just because you want to be<sup><a href="#Disclaimers">[2]</a></sup></li>
-        </ul>
-
-      <p>Areas in the UK with the highest concentration of CBT:</p>
-    <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-1.205878257751465%2C54.555628570774026%2C-1.1992961168289187%2C54.55709221908408&amp;layer=mapnik" style="border: 1px solid black"></iframe><div><small><a href="https://www.openstreetmap.org/#map=19/54.55636/-1.20259">View Larger Map</a></small></div>
-</section>
-    
-    <p>Watch below how the Typeitus virus enters the body</p>
-    	
-<video width="640" height="480" poster="/Virus.jpg" controls preload>
-  <source src="/Virus.webm" type="video/webm"> 
-  <source src="/Virus.mp4" type="video/mp4">
- 
- 
-  <track src="subtitles-en.vtt" kind="subtitles" srclang="en" label="English" default>
-  <track src="subtitles-fr.vtt" kind="subtitles" srclang="fr" label="French">
- 
-  I'm sorry, your browser doesn't support HTML5 video. 
-</video>
-
-
-    <p>Normal typing audio clip</p>
-    
-
-        <article class="Typestats">
-            <h3>Average UK
-            <dfn id="wpm"><abbr title="Words per Minute">WPM</abbr></dfn>
-            statistics<sub><small><time datetime="2023-09-25 14:54:39.929"> Sep 25th 2023</time></small></sub></h3>
-            <div>12-18 year olds</div>
-            20-30
-            <div>19-25 year olds</div>
-            35-40
-            <div>26+ year olds</div>
-            45-60
-            <div>People with CBT</div>
-            negative 30
-        </article>
-
-        <p>See below the devestating effects of Typeitus</p>
-        <iframe loading =  "lazy" width="560" height="315" src="https://www.youtube.com/embed/JnvmoFjnki8?si=e3A-USYL1Iq8OGFv" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-    <section id = "Donate">
-    <div class="headings"><h2>GIVE US MONEY NOW</h2></div>
-      <div>Please get in contact below and provide your bank details so we can set up a standing order of £100/month to provide custom keycaps for Lewis to correct his USA keyboard layout</div>
-        <a href="mailto:LewisBavin@outlook.com">lewisbavin@outlook.com</a>
-        <a href="tel:+13115552368">(+44) 7825-153263</a>
-
-    </section>
-
-      <h2>Thank You</h2>
-
-
-
-    <section id="Disclaimers" style="color: rgb(30, 0, 255)">
-      <div>Note</div>
-      <div>[1] - The virus modifies the patients language abilities on sight of their baby nephew in the room</div>
-    <div>[2] - Current studies are showing that typeitus isn't actually real and claimed sufferer's are just incredibly lazy</div>
-  </section> -->
 
 </main>
 
+<div class="sidebar">
+ <!--  <nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#intro">Intro</a>
+    <a href="#layouts">Layouts</a>
+    <a href="#keycaps">Keycaps</a>
+    <a href="#switches">Switches</a>
+    <a href="#mods">Modding</a>
+    <a href="#lubing">Lubing</a>
+  </nav> -->
+</div>
+
+</div>
+
     <footer>
-      <p>See anything wrong with this page technically? Please get in touch:</p>
-      <div>0121-DO-ONE</div>
+      <p>See anything wrong with this page technically? Please get in touch: 0121-DO-ONE</p>
+      
     </footer>
   </body>
 </html>
